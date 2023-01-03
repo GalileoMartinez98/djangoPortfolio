@@ -1,3 +1,4 @@
+{% extends 'layout.html' %} {% block content %}
 <h1>POST</h1>
 
 {% for post in posts %}
@@ -9,4 +10,4 @@
 
 <a href="{% url 'blog:post_detail' post.id %}">{{post.title}}</a>
 
-{% endfor %}
+{% endfor %} {% endblock %}
